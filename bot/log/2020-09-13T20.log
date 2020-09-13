@@ -1,0 +1,43 @@
+2020-09-13 20:23:54,434 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 20:23:54,492 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:23:54,617 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/user/ HTTP/1.1" 201 70
+2020-09-13 20:23:54,622 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:23:54,751 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/post/ HTTP/1.1" 201 124
+2020-09-13 20:23:58,814 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:23:58,973 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/dislike/ HTTP/1.1" 201 98
+2020-09-13 20:24:01,985 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:02,106 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/dislike/ HTTP/1.1" 201 98
+2020-09-13 20:24:04,114 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:04,238 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/user/ HTTP/1.1" 201 70
+2020-09-13 20:24:05,245 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:05,373 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/dislike/ HTTP/1.1" 201 98
+2020-09-13 20:24:09,386 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:09,506 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/post/ HTTP/1.1" 201 124
+2020-09-13 20:24:13,519 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:13,662 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/like/ HTTP/1.1" 201 95
+2020-09-13 20:24:14,668 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:14,782 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/user/ HTTP/1.1" 201 70
+2020-09-13 20:24:15,790 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:15,915 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/like/ HTTP/1.1" 201 95
+2020-09-13 20:24:20,930 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 20:24:21,050 [DEBUG] urllib3.connectionpool: http://127.0.0.1:8000 "POST /sn/api/post/ HTTP/1.1" 201 124

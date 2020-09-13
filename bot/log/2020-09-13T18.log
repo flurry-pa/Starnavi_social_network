@@ -1,0 +1,23 @@
+2020-09-13 18:13:45,627 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 18:13:55,584 [WARNING] django.request: Not Found: /sn/api/dislike/30/
+2020-09-13 18:15:40,999 [DEBUG] asyncio: Using selector: EpollSelector

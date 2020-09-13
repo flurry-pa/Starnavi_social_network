@@ -1,0 +1,2 @@
+2020-09-13 14:04:11,860 [INFO] django.utils.autoreload: /home/flurry/projects/032_test_Starnavi_social_network/src/api/viewsets.py changed, reloading.
+2020-09-13 14:04:11,861 [DEBUG] asyncio: Using selector: EpollSelector

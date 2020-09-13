@@ -1,0 +1,254 @@
+2020-09-13 14:04:12,798 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:09:30,795 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:09:38,904 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:10:24,303 [ERROR] django.request: Internal Server Error: /admin/sn/dislike/
+Traceback (most recent call last):
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: sn_dislike.title
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1811, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/models/query.py", line 269, in __len__
+    self._fetch_all()
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1303, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/flurry/projects/032_test_Starnavi_social_network/src/venv/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: sn_dislike.title
+2020-09-13 14:10:52,139 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:13:54,984 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:18:38,627 [INFO] django.utils.autoreload: /home/flurry/projects/032_test_Starnavi_social_network/src/sn/admin.py changed, reloading.
+2020-09-13 14:18:38,628 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:18:39,742 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:18:55,332 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:19:00,711 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:19:49,027 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:19:53,726 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:22:55,034 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:26:23,144 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:34:09,000 [INFO] django.utils.autoreload: /home/flurry/projects/032_test_Starnavi_social_network/src/sn/models.py changed, reloading.
+2020-09-13 14:34:09,097 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:34:14,512 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 14:38:08,397 [INFO] django.utils.autoreload: /home/flurry/projects/032_test_Starnavi_social_network/src/sn/models.py changed, reloading.
+2020-09-13 14:38:08,398 [DEBUG] asyncio: Using selector: EpollSelector
+2020-09-13 14:38:09,330 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 15:08:06,570 [INFO] django.utils.autoreload: /home/flurry/projects/032_test_Starnavi_social_network/src/sn/views.py changed, reloading.
+2020-09-13 15:08:06,631 [DEBUG] asyncio: Using selector: EpollSelector

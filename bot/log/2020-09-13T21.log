@@ -1,0 +1,494 @@
+2020-09-13 21:11:06,904 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 21:11:06,943 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:06,943 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:06,945 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:06,946 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/post/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b760>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:07,950 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:07,951 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588831c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:07,955 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:07,956 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:07,960 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:07,960 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588906a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:08,966 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:08,967 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588836d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:08,971 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:08,972 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883250>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:08,975 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:08,976 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a243a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:09,981 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:09,982 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:09,986 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:09,987 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:09,991 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:09,992 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c9d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:10,997 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:10,998 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24a00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:11,001 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:11,002 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:11,006 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:11,007 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890ac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:12,012 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:12,013 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:12,017 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:12,018 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c0a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:12,022 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:12,023 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883f70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:13,028 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:13,029 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:13,033 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:13,034 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890d30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:13,038 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:13,039 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d59572850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:14,044 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:14,045 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24ca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:14,049 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:14,050 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:14,053 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:14,053 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:15,058 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:15,059 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588904f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:15,063 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:15,064 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:15,067 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:15,067 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cdc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:16,072 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:16,073 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a250>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:16,077 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:16,078 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:16,082 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:16,083 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883f10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:17,088 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:17,089 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:17,093 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:17,093 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:17,097 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:17,099 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24b20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:18,103 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:18,105 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889acd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:18,109 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:18,110 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890910>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:18,112 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:18,113 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588838b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:19,118 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:19,119 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588837f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:19,123 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:19,123 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ce80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:19,127 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:19,128 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a940>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:20,133 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:20,134 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cc40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:20,138 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:20,139 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883130>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:20,141 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:20,142 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:21,146 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:21,147 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:21,151 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:21,152 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a248b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:21,155 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:21,157 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588b3670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:22,162 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:22,163 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:22,166 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:22,167 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588838e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:22,171 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:22,171 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cf10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:23,176 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:23,178 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a5e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:23,181 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:23,182 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588b32e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:23,187 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:23,188 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:24,194 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:24,195 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:24,199 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:24,199 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889abe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:24,203 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:24,204 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b4c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:25,209 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:25,210 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24a60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:25,214 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:25,214 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:25,218 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:25,219 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:26,224 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:26,225 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:26,228 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:26,229 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a9d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:26,232 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:26,233 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588838b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:27,238 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:27,239 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:27,243 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:27,244 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:27,247 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:27,248 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:28,253 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:28,254 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:28,258 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:28,259 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:28,262 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:28,263 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:29,268 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:29,269 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cb20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:29,274 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:29,275 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cb20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:29,278 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:29,279 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24940>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:30,284 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:30,285 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889aa00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:30,289 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:30,290 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889af40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:30,292 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:30,293 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:31,298 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:31,299 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890dc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:31,303 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:31,303 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588837f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:31,307 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:31,307 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:32,312 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:32,313 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:32,317 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:32,318 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:32,321 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:32,322 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ce20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:33,327 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:33,328 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:33,333 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:33,333 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a248b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:33,336 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:33,337 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a4f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:34,342 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:34,343 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a9d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:34,346 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:34,347 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:34,351 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:34,351 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cc40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:35,356 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:35,358 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:35,362 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:35,363 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d59572730>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:35,366 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:35,367 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a880>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:36,372 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:36,373 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b730>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:36,377 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:36,378 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:36,381 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:36,383 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:37,388 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:37,389 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24ca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:37,393 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:37,394 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a10af0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:37,396 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:37,397 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889aac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:38,402 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:38,403 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a6d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:38,407 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:38,408 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:38,411 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:38,412 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:39,418 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:39,419 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588830a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:39,423 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:39,423 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a100>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:39,427 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:39,428 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a0a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:40,433 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:40,434 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c3a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:40,437 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:40,438 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:40,442 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:40,443 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:41,448 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:41,449 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:41,453 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:41,454 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:41,456 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:41,457 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:42,462 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:42,463 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:42,467 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:42,468 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:42,471 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:42,472 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24a60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:43,478 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:43,479 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588906a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:43,484 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:43,486 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889acd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:43,489 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:43,490 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889aca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:44,496 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:44,497 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cb50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:44,500 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:44,501 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24f70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:44,504 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:44,505 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:45,510 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:45,511 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889afa0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:45,515 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:45,515 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889af70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:45,519 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:45,520 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890310>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:46,525 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:46,526 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:46,529 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:46,530 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588831c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:46,534 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:46,535 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:47,540 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:47,541 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b4f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:47,544 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:47,545 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:47,548 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:47,548 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:48,553 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:48,555 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890940>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:48,558 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:48,560 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c3d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:48,563 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:48,564 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:49,569 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:49,570 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:49,573 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:49,574 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:49,578 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:49,579 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:50,584 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:50,585 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cfd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:50,589 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:50,590 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cfd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:50,593 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:50,593 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889abe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:51,598 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:51,600 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b730>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:51,603 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:51,604 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:51,606 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:51,607 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:52,612 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:52,613 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:52,617 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:52,618 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890730>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:52,620 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:52,621 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:53,626 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:53,627 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:53,631 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:53,632 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:53,635 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:53,636 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c100>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:54,641 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:54,643 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cdf0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:54,646 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:54,647 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:54,649 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:54,650 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b5e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:55,655 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:55,656 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24a30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:55,659 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:55,660 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:55,663 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:55,664 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cfd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:56,670 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:56,672 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588831c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:56,676 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:56,677 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:56,681 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:56,682 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24d30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:57,687 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:57,688 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cb80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:57,691 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:57,692 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:57,695 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:57,696 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588831f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:58,701 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:58,703 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ae50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:58,707 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:58,707 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d596194f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:58,711 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:58,712 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:59,717 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:59,718 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24f70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:59,722 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:59,722 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:11:59,726 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:11:59,727 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883ee0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:00,733 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:00,734 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:00,737 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:00,738 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:00,742 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:00,743 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b6a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:01,748 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:01,749 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:01,753 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:01,754 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a160>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:01,758 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:01,759 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a2e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:02,764 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:02,765 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a0b4c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:02,769 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:02,770 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24850>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:02,772 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:02,773 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:03,778 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:03,779 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890220>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:03,783 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:03,784 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a2e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:03,787 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:03,788 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a1f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:04,793 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:04,794 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:04,798 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:04,799 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883c70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:04,803 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:04,804 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24ca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:05,809 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:05,810 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c5b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:05,814 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:05,814 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ac40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:05,817 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:05,818 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ce50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:06,823 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:06,824 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24520>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:06,828 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:06,829 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883e50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:06,831 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:06,832 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883a30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:07,838 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:07,839 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ac70>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:07,843 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:07,843 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588906a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:07,846 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:07,847 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883580>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:08,852 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:08,854 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:08,857 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:08,858 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ab20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:08,861 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:08,861 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a8b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:09,866 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:09,867 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c460>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:09,870 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:09,872 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58890df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:09,875 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:09,876 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:10,880 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:10,881 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24af0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:10,885 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:10,886 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d595edbe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:10,889 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:10,890 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588834c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:11,895 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:11,896 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c550>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:11,900 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:11,901 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588830a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:11,904 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:11,905 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:12,909 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:12,911 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24cd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:12,914 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:12,915 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a310>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:12,919 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:12,920 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a100>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:13,926 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:13,927 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ce80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:13,931 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:13,932 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:13,935 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:13,936 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889ad00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:14,941 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:14,942 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:14,946 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:14,947 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c5e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:14,951 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:14,952 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:15,956 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:15,956 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883fa0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:15,959 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:15,959 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58a24a90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:15,961 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:15,961 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889cbe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:16,966 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:16,967 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a310>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:16,971 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:16,971 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889aa30>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:16,975 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:16,975 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d588831c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:17,980 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:17,982 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d58883340>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:17,986 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:17,987 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889a700>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:12:17,991 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:12:17,992 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6d5889c370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:26,994 [DEBUG] bot.logger: Current configuration bot/conf.json:
+{
+    "api": {
+        "base_url": "http://127.0.0.1:8000/sn/api",
+        "jwt_secret": "secret"
+    },
+    "basic": {
+        "number_of_users": 3600,
+        "max_posts_per_user": 360,
+        "max_likes_per_user": 360,
+        "max_dislikes_per_user": 360,
+        "stable_period": 36000
+    },
+    "db": {
+        "db": "db.sqlite3"
+    },
+    "log": {
+        "log_path": "bot/log",
+        "log_level": "debug"
+    }
+}
+2020-09-13 21:13:27,001 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:27,002 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a316670>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:27,004 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:27,004 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/post/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a2fb760>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:28,009 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:28,011 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a1741c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:28,014 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:28,015 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a174ca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:28,019 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:28,019 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a1816a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:29,025 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:29,026 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a174eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:29,030 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:29,031 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a1741c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:29,035 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:29,035 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a316910>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:30,040 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:30,042 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a181eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:30,045 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:30,046 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a18c070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:30,050 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:30,051 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a18c9d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:31,056 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:31,057 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/user/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a316a60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:31,061 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:31,062 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/like/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a181640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2020-09-13 21:13:31,064 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:8000
+2020-09-13 21:13:31,065 [WARNING] bot.logger: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /sn/api/dislike/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd05a181d30>: Failed to establish a new connection: [Errno 111] Connection refused'))
